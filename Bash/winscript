@@ -1,0 +1,47 @@
+#!/bin/bash
+#This script downloads latest version(except Python) of applications I use.It also copies them to a shared folder on my Windows Server machine.
+mount.cifs //WIN-QBQD5HADHR2/Users/Administrator/WinScriptPackages /media/share -o credentials=/home/raghav/credentials
+wget -O CCleaner.exe http://download.piriform.com/ccsetup.exe
+mv -f /home/raghav/CCleaner.exe /media/share
+wget -O Putty.msi https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-installer.msi
+mv -f /home/raghav/Putty.msi /media/share
+wget -O Python-2.7.13.msi https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64.msi
+mv -f /home/raghav/Python-2.7.13.msi /media/share
+wget -O Chrome.exe https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B02C15037-C060-BE83-3D4B-500F08FF1A70%7D%26lang%3Den-GB%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe
+mv -f /home/raghav/Chrome.exe /media/share
+wget -O Github.exe https://github-windows.s3.amazonaws.com/GitHubSetup.exe
+mv -f /home/raghav/Github.exe /media/share
+wget -O DJ3520.exe http://ftp.hp.com/pub/softlib/software12/COL42544/al-108812-4/DJ3520_1315-1.exe
+mv -f /home/raghav/DJ3520.exe /media/share
+wget -O Lastpass.exe https://lastpass.com/download/cdn/lastappinstall_x64.exe
+mv -f /home/raghav/Lastpass.exe /media/share
+wget -O iTunes.exe https://secure-appldnld.apple.com/itunes12/091-04060-20170323-F8B6662A-39E9-46EE-BA40-BDA0CCD05F40/iTunes64Setup.exe
+mv -f /home/raghav/iTunes.exe /media/share
+wget -O Skype.exe https://download.skype.com/4d6c7906b603453587052f13855e49ef/SkypeSetup.exe
+mv -f /home/raghav/Skype.exe /media/share
+wget -O ResilioSync.exe https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe
+mv -f /home/raghav/ResilioSync.exe /media/share
+wget -O GSOS.exe https://dl.google.com/tag/s/appguid%3D%7BBEBCAD10-F1BC-4F92-B4A7-9E2545C809ED%7D%26iid%3D%7B0E07F3DF-BE95-E593-1042-215C478B7D5B%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Apps%2520Sync%25E2%2584%25A2%2520for%2520Microsoft%2520Outlook%25C2%25AE%26needsadmin%3Dtrue%26appguid%3D%7B7DF3B6EE-9890-4307-BDE5-E1F3FCB09771%7D%26appname%3DGoogle%2520Apps%2520Migration%25E2%2584%25A2%2520for%2520Microsoft%2520Outlook%25C2%25AE%26needsadmin%3Dtrue/google-apps-sync/googleappssyncsetup.exe
+mv -f /home/raghav/GSOS.exe /media/share
+wget -O Norton.exe http://lcdls.symantec.com/93639012/BaYBvy1H0MPFQ00FOA2IKgwf+/AbcY003MD/////%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~%2F%26~/NSDownloader.exe?LNG=eng-USA&latest=true
+mv -f /home/raghav/Norton.exe /media/share/Norton.exe
+wget -O VLC.exe ftp://download.videolan.org/pub/videolan/vlc/last/win64/*.exe
+mv -f /home/raghav/VLC.exe /media/share
+wget -r -l1 --no-parent -ASetup.exe  https://www.goodsync.com/download/
+mv -f /home/raghav/www.goodsync.com/download/GoodSync-v10-Setup.exe /media/share/GoodSync.exe
+rm -r /home/raghav/www.goodsync.com/
+wget -O WinSCP.exe https://sourceforge.net/projects/winscp/files/latest/download?source=files
+mv -f /home/raghav/WinSCP.exe /media/share
+wget -O PyScripter.exe https://sourceforge.net/projects/pyscripter/files/latest/download?source=files
+mv -f /home/raghav/PyScripter.exe /media/share
+wget -r -l1 --no-parent https://calibre-ebook.com/dist/win64
+mv -f /home/raghav/calibre-ebook.com/dist/win64 /media/share/Calibre.msi
+rm -r /home/raghav/calibre-ebook.com/
+wget -r -l1 --no-parent -A.exe http://www.win-rar.com/postdownload.html?&L=0
+mv -f /home/raghav/www.win-rar.com/fileadmin/winrar-versions/winrar/*.exe /media/share/WinRAR.exe
+rm -r /home/raghav/www.win-rar.com/
+wget -O FirefoxSetup.exe "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US"
+mv -f /home/raghav/FirefoxSetup.exe /media/share/Firefox.exe
+wget -r -l1 --no-parent -A.exe http://download.virtualbox.org/virtualbox/curl http://download.virtualbox.org/virtualbox/wget http://download.virtualbox.org/virtualbox/5.1.18/
+mv -f /home/raghav/download.virtualbox.org/virtualbox/*/*.exe /media/share/VirtualBox.exe
+rm -r /home/raghav/download.virtualbox.org/
