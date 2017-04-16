@@ -1,5 +1,4 @@
 #!/bin/bash
-#This script downloads latest version(except Python) of applications I use.It also copies them to a shared folder on my Windows Server machine.
 mount.cifs //WIN-QBQD5HADHR2/Users/Administrator/WinScriptPackages /media/share -o credentials=/home/raghav/credentials
 wget -O CCleaner.exe http://download.piriform.com/ccsetup.exe
 mv -f /home/raghav/CCleaner.exe /media/share
@@ -45,3 +44,5 @@ mv -f /home/raghav/FirefoxSetup.exe /media/share/Firefox.exe
 wget -r -l1 --no-parent -A.exe http://download.virtualbox.org/virtualbox/curl http://download.virtualbox.org/virtualbox/wget http://download.virtualbox.org/virtualbox/5.1.18/
 mv -f /home/raghav/download.virtualbox.org/virtualbox/*/*.exe /media/share/VirtualBox.exe
 rm -r /home/raghav/download.virtualbox.org/
+wget -O CloudPrintServices.exe https://dl.google.com/tag/s/appguid%3D%7B86206CC6-CD3C-427D-9A34-77B34819CDD3%7D%26iid%3D%7B452D5243-AE7B-0EF8-9987-67C48C4FD850%7D%26lang%3Den-GB%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Cloud%2520Print%2520Service%26needsadmin%3Dtrue/cloudprint/cloudprintservicesetup.exe
+mv -f /home/raghav/CloudPrintServices.exe /media/share/
