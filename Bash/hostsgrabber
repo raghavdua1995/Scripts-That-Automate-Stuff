@@ -34,5 +34,5 @@ curl -s http://rlwpx.free.fr/WPFF/hsex.7z > hsex.7z
 mv -f /root/Hosts.sex /var/www/html/antisex
 rm /root/hsex.7z
 
-#EFF Cookie Blocklist
+##EFF Cookie Blocklist
 curl -s https://www.eff.org/files/cookieblocklist.txt | sed 's/^@@||//' | cut -d'^' -f-1 > /var/www/html/EFF
