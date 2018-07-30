@@ -1,1 +1,1 @@
-choco install git.install tortoise-git winscp.install putty.install vlc ccleaner dashlane vscode kindle wireshark anki teamviewer -Y
+choco install git.install tortoisegit  winscp.install putty.install vlc youtube-dl ccleaner dashlane vscode kindle wireshark anki teamviewer nodejs -Y

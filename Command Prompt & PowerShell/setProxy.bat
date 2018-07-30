@@ -1,1 +1,2 @@
+echo Setting Proxy
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v AutoConfigURL /t REG_SZ /d https://raw.githubusercontent.com/raghavdua1995/Scripts-That-Automate-Stuff/master/JavaScript/proxy.pac
