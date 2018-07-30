@@ -6,4 +6,6 @@ call installChocolatey.bat
 call installChocolateyPackages.bat
 call registry-tweaks.reg
 
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy bypass -File systemSettings.ps1
+
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy bypass -File configureServices.ps1
