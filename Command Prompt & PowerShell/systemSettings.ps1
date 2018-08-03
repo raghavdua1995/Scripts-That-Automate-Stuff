@@ -116,3 +116,22 @@ Set-BlueLight -EnableAutomaticSchedule
 Write-Host "Enabling automatic updates for other Microsoft products..."
 $mu = New-Object -ComObject Microsoft.Update.ServiceManager -Strict 
 $mu.AddService2("7971f918-a847-4430-9279-4a52d1efe18d", 7, "")
+
+Write-Host "Setting application defaults..."
+dism /online /Import-DefaultAppAssociations:"C:\Users\me\Source Code\Personal\Scripts-That-Automate-Stuff\Command Prompt & PowerShell\defaultAppAssociations.xml"
+
+Write-Host "Disabling automatic settings sync..."
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\SettingSync" -Name DisableSettingSync -Type DWord -Value 00000002
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\SettingSync" -Name DisableSettingSyncUserOverride -Type DWord -Value 00000001
+
+Write-Host "Disabling Game Mode..."
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\GameBar" -Name AllowAutoGameMode -Type DWord -Value 00000000
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\GameBar" -Name AutoGameModeEnabled -Type DWord -Value 00000000
+
+Write-Host "Disabling Game Bar..."
+New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" -Name AppCaptureEnabled -Type DWord -Value 00000000
+Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name GameDVR_Enabled -Type DWord -Value 00000000
+
+Write-Host "Disabling App Suggestions in Start Menu..."
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name SystemPaneSuggestionsEnabled -Type DWord -Value 0
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name SilentInstalledAppsEnabled -Type DWord -Value 0
