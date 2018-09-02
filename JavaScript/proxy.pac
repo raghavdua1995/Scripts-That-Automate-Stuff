@@ -1,4 +1,4 @@
-var proxy = "PROXY 192.168.2.2:3128";
+var proxy = "PROXY 192.168.2.3:3128";
 function FindProxyForURL(url, host) {
     if (dnsResolve(host) == "127.0.0.1") {
         // Avoid using proxy for any domain that is resolved to be *localhost*.
