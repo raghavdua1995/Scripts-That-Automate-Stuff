@@ -117,9 +117,6 @@ Write-Host "Enabling automatic updates for other Microsoft products..."
 $mu = New-Object -ComObject Microsoft.Update.ServiceManager -Strict 
 $mu.AddService2("7971f918-a847-4430-9279-4a52d1efe18d", 7, "")
 
-Write-Host "Setting application defaults..."
-dism /online /Import-DefaultAppAssociations:"defaultAppAssociations.xml"
-
 Write-Host "Disabling automatic settings sync..."
 New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\SettingSync" -Name DisableSettingSync -Type DWord -Value 00000002
 New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\SettingSync" -Name DisableSettingSyncUserOverride -Type DWord -Value 00000001
