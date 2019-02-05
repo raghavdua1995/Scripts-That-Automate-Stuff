@@ -132,7 +132,3 @@ Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name GameDVR_Enabled -Typ
 Write-Host "Disabling App Suggestions in Start Menu..."
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name SystemPaneSuggestionsEnabled -Type DWord -Value 0
 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name SilentInstalledAppsEnabled -Type DWord -Value 0
-
-Write-Host "Disabling Preloading Of Microsoft Edge..."
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main" -Name AllowPrelaunch -Type DWord -Value 0
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main" -Name AllowTabPreloading -Type DWord -Value 0
