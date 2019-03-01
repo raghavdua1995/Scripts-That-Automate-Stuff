@@ -1,1 +1,1 @@
-choco install git.install tortoisegit winscp.install vlc youtube-dl ccleaner bitwarden vscode kindle miktex.install wireshark anki teamviewer nodejs-lts insomnia-rest-api-client googlechrome androidstudio sendtokindle zoom -Y
+choco install git.install tortoisegit vlc youtube-dl ccleaner bitwarden vscode kindle miktex.install wireshark anki teamviewer nodejs-lts insomnia-rest-api-client googlechrome androidstudio sendtokindle zoom -Y
