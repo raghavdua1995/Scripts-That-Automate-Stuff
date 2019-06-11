@@ -4,6 +4,8 @@ call configureNetworkSettings.bat
 call installChocolatey.bat
 call installChocolateyPackages.bat
 call registry-tweaks.reg
+call putty-config.reg
+call winscp-config.reg
 
 %SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy bypass -File systemSettings.ps1
 
