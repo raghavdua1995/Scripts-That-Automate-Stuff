@@ -4,8 +4,6 @@ call configureNetworkSettings.bat
 call installChocolatey.bat
 call installChocolateyPackages.bat
 call registry-tweaks.reg
-call putty-config.reg
-call winscp-config.reg
 
 %SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy bypass -File systemSettings.ps1
 
@@ -14,3 +12,17 @@ call winscp-config.reg
 mkdir "%USERPROFILE%\Source Code"
 mkdir "%USERPROFILE%\Source Code\Personal"
 mkdir "%USERPROFILE%\Source Code\Widely"
+mkdir "%USERPROFILE%\Source Code\Pipa • Bella"
+
+echo Install the following applications manually:
+echo Microsoft Office 365
+echo Vivaldi Browser
+echo Google Drive
+echo Adobe Creative Cloud
+echo Samsung Magician
+echo Zenkit
+echo Slack
+echo Spotify Music
+echo Termius SSH Client
+echo Windows Terminal
+echo Google Cloud SDK
