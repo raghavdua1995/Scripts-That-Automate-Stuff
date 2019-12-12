@@ -16,14 +16,10 @@ mkdir "%USERPROFILE%\Source Code\Pipa • Bella"
 
 echo Install the following applications manually:
 echo Adobe Creative Cloud
-echo Google Cloud SDK
 echo Google Drive
-echo Node Version Manager
 echo Microsoft Office 365
 echo Samsung Magician
 echo Slack
 echo Spotify Music
 echo Termius SSH Client
-echo Vivaldi Browser
-echo Windows Terminal
-echo Zenkit
+echo Aasana
