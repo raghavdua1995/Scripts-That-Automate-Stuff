@@ -1,4 +1,4 @@
-choco install git.install tortoisegit vlc youtube-dl ccleaner bitwarden evernote vscode kindle teamviewer postman firefox python anaconda3 yarn nvm.portable texstudio -Y
+choco install git.install tortoisegit vlc youtube-dl bitwarden evernote vscode kindle teamviewer postman firefox python yarn nvm.portable texstudio powertoys -Y
 
 C:\ProgramData\nvm\nvm.exe install latest
 C:\ProgramData\nvm\nvm.exe install 12.13.1
