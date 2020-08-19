@@ -13,13 +13,10 @@ mkdir "%USERPROFILE%\Source Code"
 mkdir "%USERPROFILE%\Source Code\Personal"
 mkdir "%USERPROFILE%\Source Code\Widely"
 mkdir "%USERPROFILE%\Source Code\Pipa • Bella"
+mkdir "%USERPROFILE%\Source Code\6thStreet.com"
 
 echo Install the following applications manually:
-echo Adobe Creative Cloud
-echo Google Drive
 echo Microsoft Office 365
 echo Samsung Magician
-echo Slack
 echo Spotify Music
 echo Termius SSH Client
-echo Aasana
