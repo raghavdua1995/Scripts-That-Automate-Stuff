@@ -1,5 +1,3 @@
-choco install git.install tortoisegit vlc youtube-dl bitwarden vscode kindle sendtokindle teamviewer postman firefox python3 yarn nvm.portable texstudio powertoys google-backup-and-sync -Y
+choco install git.install tortoisegit vlc youtube-dl bitwarden vscode kindle sendtokindle anki teamviewer postman firefox python3 yarn nvm.portable texstudio powertoys google-backup-and-sync docker-desktop signal -Y
 
-C:\ProgramData\nvm\nvm.exe install latest
-C:\ProgramData\nvm\nvm.exe install 14.15.0
-C:\ProgramData\nvm\nvm.exe use 15.1.0
+C:\ProgramData\nvm\nvm.exe install 14.16.0

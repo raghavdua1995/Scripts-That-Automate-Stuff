@@ -11,12 +11,10 @@ call registry-tweaks.reg
 
 mkdir "%USERPROFILE%\Source Code"
 mkdir "%USERPROFILE%\Source Code\Personal"
-mkdir "%USERPROFILE%\Source Code\Widely"
-mkdir "%USERPROFILE%\Source Code\Pipa • Bella"
-mkdir "%USERPROFILE%\Source Code\6thStreet.com"
+mkdir "%USERPROFILE%\Source Code\Apparel Group"
 
 echo Install the following applications manually:
-echo Microsoft Office 365
+echo Microsoft Office
 echo Samsung Magician
 echo Spotify Music
 echo Termius SSH Client
