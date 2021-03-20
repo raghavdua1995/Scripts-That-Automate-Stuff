@@ -1,2 +1,2 @@
-powershell.exe Set-NetConnectionProfile -Name "Raghav" -NetworkCategory Private
+powershell.exe Set-NetConnectionProfile -Name "raghav_optout_nomap" -NetworkCategory Private
 
