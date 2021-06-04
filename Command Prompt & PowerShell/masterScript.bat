@@ -11,7 +11,7 @@ call registry-tweaks.reg
 
 mkdir "%USERPROFILE%\Source Code"
 mkdir "%USERPROFILE%\Source Code\Personal"
-mkdir "%USERPROFILE%\Source Code\Apparel Group"
+mkdir "%USERPROFILE%\Source Code\Nykaa"
 
 echo Install the following applications manually:
 echo Microsoft Office
